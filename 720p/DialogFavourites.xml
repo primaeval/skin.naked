@@ -56,19 +56,19 @@
 				<ondown>450</ondown>
 				<pagecontrol>-</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<itemlayout height="40">
+				<itemlayout height="80">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>370</width>
-						<height>40</height>
+						<height>80</height>
 						<texture border="5">button-nofocus.png</texture>
 					</control>
 					<control type="label">
 						<left>10</left>
 						<top>0</top>
 						<width>350</width>
-						<height>40</height>
+						<height>80</height>
 						<font>font12_title</font>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -76,12 +76,12 @@
 						<info>ListItem.Label</info>
 					</control>
 				</itemlayout>
-				<focusedlayout height="40">
+				<focusedlayout height="80">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>370</width>
-						<height>40</height>
+						<height>80</height>
 						<visible>!Control.HasFocus(450)</visible>
 						<texture border="3">button-nofocus.png</texture>
 					</control>
@@ -89,7 +89,7 @@
 						<left>0</left>
 						<top>0</top>
 						<width>370</width>
-						<height>40</height>
+						<height>80</height>
 						<visible>Control.HasFocus(450)</visible>
 						<texture border="3">button-focus.png</texture>
 					</control>
@@ -97,7 +97,7 @@
 						<left>10</left>
 						<top>0</top>
 						<width>350</width>
-						<height>40</height>
+						<height>80</height>
 						<font>font12_title</font>
 						<align>left</align>
 						<aligny>center</aligny>
