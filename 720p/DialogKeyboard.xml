@@ -32,7 +32,7 @@
 					<texture border="20">OverlayDialogBackground.png</texture>
 				</control>
 				<control type="image">
-					<left>50</left>
+					<left>64</left>
 					<top>18</top>
 					<width>760</width>
 					<height>32</height>
@@ -69,10 +69,10 @@
 				</control>
 			</control>
 			<control type="image">
-				<left>50</left>
+				<left>64</left>
 				<top>60</top>
 				<width>760</width>
-				<height>50</height>
+				<height>64</height>
 				<aspectratio>stretch</aspectratio>
 				<texture border="20">KeyboardEditArea.png</texture>
 			</control>
@@ -81,7 +81,7 @@
 				<left>55</left>
 				<top>60</top>
 				<width>750</width>
-				<height>50</height>
+				<height>64</height>
 				<font>font13</font>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -106,7 +106,7 @@
 					<control type="button" id="309">
 						<description>Layout button</description>
 						<width>200</width>
-						<height>50</height>
+						<height>64</height>
 						<label>20177</label>
 						<onup>300</onup>
 						<ondown>302</ondown>
@@ -195,12 +195,12 @@
 				<!-- 2nd row -->
 				<control type="grouplist">
 					<orientation>horizontal</orientation>
-					<top>50</top>
+					<top>64</top>
 					<itemgap>0</itemgap>
 					<control type="radiobutton" id="302">
 						<description>SHIFT button</description>
 						<width>200</width>
-						<height>50</height>
+						<height>64</height>
 						<label>20178</label>
 						<onup>309</onup>
 						<ondown>303</ondown>
@@ -289,13 +289,13 @@
 				</control>
 				<!-- 3rd row -->
 				<control type="grouplist">
-					<top>100</top>
+					<top>128</top>
 					<orientation>horizontal</orientation>
 					<itemgap>0</itemgap>
 					<control type="radiobutton" id="303">
 						<description>CAPS LOCK button</description>
 						<width>200</width>
-						<height>50</height>
+						<height>64</height>
 						<label>20179</label>
 						<onup>302</onup>
 						<ondown>307</ondown>
@@ -384,13 +384,13 @@
 				</control>
 				<!-- 4th row -->
 				<control type="grouplist">
-					<top>150</top>
+					<top>192</top>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="button" id="307">
 						<description>IP Input button</description>
 						<width>100</width>
-						<height>50</height>
+						<height>64</height>
 						<onup>303</onup>
 						<ondown>300</ondown>
 						<label>IP</label>
@@ -404,7 +404,7 @@
 					<control type="radiobutton" id="304">
 						<description>Symbols button</description>
 						<width>100</width>
-						<height>50</height>
+						<height>64</height>
 						<label>@#!*   </label>
 						<onup>303</onup>
 						<ondown>300</ondown>
@@ -493,13 +493,13 @@
 				</control>
 				<!-- 5th row -->
 				<control type="grouplist">
-					<top>200</top>
+					<top>256</top>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="button" id="300">
 						<description>DONE button</description>
 						<width>200</width>
-						<height>50</height>
+						<height>64</height>
 						<texturenofocus border="25,5,25,5">KeyboardCornerBottomNF.png</texturenofocus>
 						<texturefocus border="25,5,25,5">KeyboardCornerBottom.png</texturefocus>
 						<label>20177</label>
@@ -513,7 +513,7 @@
 					<control type="button" id="32">
 						<description>SPACE button</description>
 						<width>200</width>
-						<height>50</height>
+						<height>64</height>
 						<label>20182</label>
 						<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
 						<texturefocus border="5">KeyboardKey.png</texturefocus>
@@ -527,7 +527,7 @@
 					<control type="button" id="8">
 						<description>BACKSPACE button</description>
 						<width>200</width>
-						<height>50</height>
+						<height>64</height>
 						<label>20181</label>
 						<onup>165</onup>
 						<ondown>105</ondown>
@@ -541,7 +541,7 @@
 					<control type="button" id="305">
 						<description>previous button</description>
 						<width>100</width>
-						<height>50</height>
+						<height>64</height>
 						<label>&lt;</label>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -555,7 +555,7 @@
 					<control type="button" id="306">
 						<description>next button</description>
 						<width>100</width>
-						<height>50</height>
+						<height>64</height>
 						<label>&gt;</label>
 						<align>center</align>
 						<aligny>center</aligny>
