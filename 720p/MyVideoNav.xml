@@ -7,7 +7,7 @@
             <description>Simple Wide List</description>
             <left>0</left>
             <top>0</top>
-            <width>1100</width>
+            <width>1150</width>
             <height>720</height>
             <visible>true</visible>
             <viewtype label="list">list</viewtype>
@@ -15,7 +15,7 @@
             <pagecontrol>-</pagecontrol>
             <autoscroll>false</autoscroll>
             <scrolltime>0</scrolltime>
-            <itemlayout width="1000" height="72">
+            <itemlayout width="1150" height="72">
                 <control type="image">
                     <left>1</left>
                     <top>1</top>
@@ -27,9 +27,9 @@
                 <control type="label">
                     <left>134</left>
                     <top>0</top>
-                    <width>900</width>
+                    
                     <height>60</height>
-                    <font>font_MainMenu</font>
+                    <font>font16</font>
                     <aligny>center</aligny>
                     <textcolor>grey2</textcolor>
                     <selectedcolor>selected</selectedcolor>
@@ -37,7 +37,7 @@
                     <info>ListItem.Label</info>
                 </control>
             </itemlayout>
-            <focusedlayout width="1000" height="72">
+            <focusedlayout width="1150" height="72">
                 <control type="image">
                     <left>1</left>
                     <top>1</top>
@@ -49,9 +49,9 @@
                 <control type="label">
                     <left>134</left>
                     <top>0</top>
-                    <width>900</width>
+                    
                     <height>60</height>
-                    <font>font_MainMenu</font>
+                    <font>font16</font>
                     <aligny>center</aligny>
                     <textcolor>white</textcolor>
                     <selectedcolor>selected</selectedcolor>
