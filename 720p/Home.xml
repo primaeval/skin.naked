@@ -132,7 +132,10 @@
   </item>
 
 
-
+  <item id="1">
+    <label>shutdown</label>
+    <onclick>ActivateWindow(ShutdownMenu)</onclick>
+  </item>
   
 
   

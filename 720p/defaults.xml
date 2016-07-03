@@ -21,8 +21,8 @@
 		<disabledcolor>grey3</disabledcolor>
 	</default>
 	<default type="button">
-		<width>300</width>
-		<height>42</height>
+		<width>600</width>
+		<height>84</height>
 		<texturefocus border="5">button-focus.png</texturefocus>
 		<texturenofocus border="5">button-nofocus.png</texturenofocus>
 		<font>font_MainMenu</font>
@@ -35,8 +35,8 @@
 	<default type="togglebutton">
 		<left>140</left>
 		<top>167</top>
-		<width>20</width>
-		<height>20</height>
+		<width>40</width>
+		<height>40</height>
 		<texturefocus>scroll-up-focus.png</texturefocus>
 		<texturenofocus>scroll-up.png</texturenofocus>
 		<alttexturefocus>scroll-down-focus.png</alttexturefocus>
