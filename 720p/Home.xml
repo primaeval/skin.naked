@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <controls>
+<control type="button" id="1">
+      <description>Power Button</description>
+      <left>200r</left>
+      <top>80r</top>
+      <width>200</width>
+      <height>80</height>
+      <visible>true</visible>
+      <colordiffuse>FFFFFFFF</colordiffuse>
+      <label>Power</label>
+      <align>center</align>
+      <aligny>center</aligny>
+      <wrapmultiline>true</wrapmultiline>
+      <font>font_MainMenu</font>
+      <textcolor>white</textcolor>
+      <focusedcolor>selected</focusedcolor>
+      <disabledcolor>grey</disabledcolor>
+      <invalidcolor>red</invalidcolor>
+      <onclick>XBMC.ActivateWindow(Settings)</onclick>
+</control>            
+<control type="list" id="50">
+      <description>My first list container</description>
+      <left>0</left>
+      <top>0</top>
+      <width>1280</width>
+      <height>720</height>
+      <visible>true</visible>
+      <viewtype label="list">list</viewtype>
+      <orientation>vertical</orientation>
+      <pagecontrol>-</pagecontrol>
+      <autoscroll>false</autoscroll>
+      <scrolltime>0</scrolltime>
+      <itemlayout width="1280" height="72">
+                <control type="image">
+                        <left>1</left>
+                        <top>1</top>
+                        <width>64</width>
+                        <height>64</height>
+                        <info>ListItem.Icon</info>
+                </control>
+                <control type="label">
+                        <left>66</left>
+                        <top>0</top>
+                        <width>1000</width>
+                        <height>60</height>
+                        <font>font_MainMenu</font>
+                        <aligny>center</aligny>
+                        <selectedcolor>green</selectedcolor>
+                        <align>left</align>
+                        <info>ListItem.Label</info>
+                </control>
+                <control type="label">
+                        <left>1000</left>
+                        <top>0</top>
+                        <width>200</width>
+                        <height>60</height>
+                        <font>font_MainMenu</font>
+                        <aligny>center</aligny>
+                        <selectedcolor>green</selectedcolor>
+                        <textcolor>grey</textcolor>
+                        <align>right</align>
+                        <info>ListItem.Label2</info>
+                </control>
+      </itemlayout>
+      <focusedlayout width="1280" height="72">
+                <control type="image">
+                        <left>1</left>
+                        <top>1</top>
+                        <width>64</width>
+                        <height>64</height>
+                        <info>ListItem.Icon</info>
+                </control>
+                <control type="label">
+                        <left>66</left>
+                        <top>0</top>
+                        <width>1000</width>
+                        <height>60</height>
+                        <font>font_MainMenu</font>
+                        <aligny>center</aligny>
+                        <selectedcolor>green</selectedcolor>
+                        <align>left</align>
+                        <info>ListItem.Label</info>
+                </control>
+                <control type="label">
+                        <left>1000</left>
+                        <top>0</top>
+                        <width>200</width>
+                        <height>60</height>
+                        <font>font_MainMenu</font>
+                        <aligny>center</aligny>
+                        <selectedcolor>green</selectedcolor>
+                        <textcolor>grey</textcolor>
+                        <align>right</align>
+                        <info>ListItem.Label2</info>
+                </control>
+      </focusedlayout>      
+<content>
+  <item id="1">
+    <label>My First Item</label>
+    <label2>Label 2</label2>
+    <icon>icon1.png</icon>
+    <thumb>DefaultFolder.png</thumb>
+    <onclick>ActivateWindow(Home)</onclick>
+    <visible>true</visible>
+    <property name="foo">Some1stValueHere</property>
+    <property name="foo2">Some2ndValueHere</property>
+  </item>
+  <item id="2">
+    <label>My Second Item</label>
+    <label2>Label 2</label2>
+    <icon>icon2.png</icon>
+    <thumb>DefaultFolder.png</thumb>
+    <onclick>ActivateWindow(MyMusicLibrary)</onclick>
+    <property name="foo">Some1stValueHere</property>
+    <property name="foo2">Some2ndValueHere</property>
+  </item>
+  <item id="1">
+    <label>My First Item</label>
+    <label2>Label 2</label2>
+    <icon>icon1.png</icon>
+    <thumb>DefaultFolder.png</thumb>
+    <onclick>ActivateWindow(Home)</onclick>
+    <visible>true</visible>
+    <property name="foo">Some1stValueHere</property>
+    <property name="foo2">Some2ndValueHere</property>
+  </item>
+  <item id="2">
+    <label>My Second Item</label>
+    <label2>Label 2</label2>
+    <icon>icon2.png</icon>
+    <thumb>DefaultFolder.png</thumb>
+    <onclick>ActivateWindow(MyMusicLibrary)</onclick>
+    <property name="foo">Some1stValueHere</property>
+    <property name="foo2">Some2ndValueHere</property>
+  </item>
+  <item id="1">
+    <label>My First Item</label>
+    <label2>Label 2</label2>
+    <icon>icon1.png</icon>
+    <thumb>DefaultFolder.png</thumb>
+    <onclick>ActivateWindow(Home)</onclick>
+    <visible>true</visible>
+    <property name="foo">Some1stValueHere</property>
+    <property name="foo2">Some2ndValueHere</property>
+  </item>
+  <item id="2">
+    <label>My Second Item</label>
+    <label2>Label 2</label2>
+    <icon>icon2.png</icon>
+    <thumb>DefaultFolder.png</thumb>
+    <onclick>ActivateWindow(MyMusicLibrary)</onclick>
+    <property name="foo">Some1stValueHere</property>
+    <property name="foo2">Some2ndValueHere</property>
+  </item>
+    <item id="1">
+    <label>My First Item</label>
+    <label2>Label 2</label2>
+    <icon>icon1.png</icon>
+    <thumb>DefaultFolder.png</thumb>
+    <onclick>ActivateWindow(Home)</onclick>
+    <visible>true</visible>
+    <property name="foo">Some1stValueHere</property>
+    <property name="foo2">Some2ndValueHere</property>
+  </item>
+  <item id="2">
+    <label>My Second Item</label>
+    <label2>Label 2</label2>
+    <icon>icon2.png</icon>
+    <thumb>DefaultFolder.png</thumb>
+    <onclick>ActivateWindow(MyMusicLibrary)</onclick>
+    <property name="foo">Some1stValueHere</property>
+    <property name="foo2">Some2ndValueHere</property>
+  </item>
+  <item id="1">
+    <label>My First Item</label>
+    <label2>Label 2</label2>
+    <icon>icon1.png</icon>
+    <thumb>DefaultFolder.png</thumb>
+    <onclick>ActivateWindow(Home)</onclick>
+    <visible>true</visible>
+    <property name="foo">Some1stValueHere</property>
+    <property name="foo2">Some2ndValueHere</property>
+  </item>
+  <item id="2">
+    <label>My Second Item</label>
+    <label2>Label 2</label2>
+    <icon>icon2.png</icon>
+    <thumb>DefaultFolder.png</thumb>
+    <onclick>ActivateWindow(MyMusicLibrary)</onclick>
+    <property name="foo">Some1stValueHere</property>
+    <property name="foo2">Some2ndValueHere</property>
+  </item>
+    <item id="1">
+    <label>My First Item</label>
+    <label2>Label 2</label2>
+    <icon>icon1.png</icon>
+    <thumb>DefaultFolder.png</thumb>
+    <onclick>ActivateWindow(Home)</onclick>
+    <visible>true</visible>
+    <property name="foo">Some1stValueHere</property>
+    <property name="foo2">Some2ndValueHere</property>
+  </item>
+  <item id="2">
+    <label>My Second Item</label>
+    <label2>Label 2</label2>
+    <icon>icon2.png</icon>
+    <thumb>DefaultFolder.png</thumb>
+    <onclick>ActivateWindow(MyMusicLibrary)</onclick>
+    <property name="foo">Some1stValueHere</property>
+    <property name="foo2">Some2ndValueHere</property>
+  </item>
+    <item id="1">
+    <label>My First Item</label>
+    <label2>Label 2</label2>
+    <icon>icon1.png</icon>
+    <thumb>DefaultFolder.png</thumb>
+    <onclick>ActivateWindow(Home)</onclick>
+    <visible>true</visible>
+    <property name="foo">Some1stValueHere</property>
+    <property name="foo2">Some2ndValueHere</property>
+  </item>
+  <item id="2">
+    <label>My Second Item</label>
+    <label2>Label 2</label2>
+    <icon>icon2.png</icon>
+    <thumb>DefaultFolder.png</thumb>
+    <onclick>ActivateWindow(MyMusicLibrary)</onclick>
+    <property name="foo">Some1stValueHere</property>
+    <property name="foo2">Some2ndValueHere</property>
+  </item>
+</content>      
+</control>
+    </controls>   
+</window>
