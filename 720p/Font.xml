@@ -5,78 +5,78 @@
 		<font>
 			<name>font10</name>
 			<filename>Roboto-Regular.ttf</filename>
-			<size>14</size>
+			<size>24</size>
 		</font>
 		<font>
 			<name>font12</name>
 			<filename>Roboto-Regular.ttf</filename>
-			<size>17</size>
+			<size>27</size>
 		</font>
 		<font>
 			<name>font13</name>
 			<filename>Roboto-Regular.ttf</filename>
-			<size>20</size>
+			<size>30</size>
 		</font>
 		<font>
 			<name>font14</name>
 			<filename>Roboto-Regular.ttf</filename>
-			<size>22</size>
+			<size>32</size>
 		</font>
 		<font>
 			<name>font16</name>
 			<filename>Roboto-Regular.ttf</filename>
-			<size>25</size>
+			<size>35</size>
 		</font>
 		<font>
 			<name>font30</name>
 			<filename>Roboto-Regular.ttf</filename>
-			<size>30</size>
+			<size>40</size>
 		</font>
 		<font>
 			<name>fontContextMenu</name>
 			<filename>Roboto-Regular.ttf</filename>
-			<size>18</size>
+			<size>28</size>
 		</font>
 		<!-- Title Fonts -->
 		<font>
 			<name>font10_title</name>
 			<filename>Roboto-Bold.ttf</filename>
-			<size>12</size>
+			<size>22</size>
 		</font>
 		<font>
 			<name>font12_title</name>
 			<filename>Roboto-Bold.ttf</filename>
-			<size>17</size>
+			<size>27</size>
 		</font>
 		<font>
 			<name>font13_title</name>
 			<filename>Roboto-Bold.ttf</filename>
-			<size>20</size>
+			<size>30</size>
 		</font>
 		<font>
 			<name>font24_title</name>
 			<filename>Roboto-Bold.ttf</filename>
-			<size>24</size>
+			<size>34</size>
 		</font>
 		<font>
 			<name>font28_title</name>
 			<filename>Roboto-Bold.ttf</filename>
-			<size>28</size>
+			<size>38</size>
 		</font>
 		<font>
 			<name>font30_title</name>
 			<filename>Roboto-Bold.ttf</filename>
-			<size>30</size>
+			<size>40</size>
 		</font>
 		<font>
 			<name>font35_title</name>
 			<filename>Roboto-Bold.ttf</filename>
-			<size>35</size>
+			<size>45</size>
 		</font>
 		<font>
 			<name>font_MainMenu</name>
 			<filename>Roboto-Bold.ttf</filename>
-			<size>40</size>
+			<size>50</size>
 		</font>
 		<font>
 			<name>WeatherTemp</name>

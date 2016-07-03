@@ -511,14 +511,7 @@
             <usecontrolcoords>false</usecontrolcoords>
             <visible>true</visible>
             <align>left</align>
-            <control type="button" id="1000">
-                <description>Close Window button</description>
-                <width>96</width>
-                <height>96</height>
-                <onclick>Dialog.Close(VideoOSD,true)</onclick>
-                <texturefocus>DialogCloseButton-focus.png</texturefocus>
-                <texturenofocus>DialogCloseButton.png</texturenofocus>
-            </control>
+
             <control type="button" id="601">
                 <width>96</width>
                 <height>96</height>
@@ -564,6 +557,14 @@
                 <texturenofocus>OSDNextTrackNF.png</texturenofocus>
                 <onclick>PlayerControl(BigSkipForward)</onclick>
             </control>
+            <control type="button" id="1000">
+                <description>Close Window button</description>
+                <width>96</width>
+                <height>96</height>
+                <onclick>Dialog.Close(VideoOSD,true)</onclick>
+                <texturefocus>DialogCloseButton-focus.png</texturefocus>
+                <texturenofocus>DialogCloseButton.png</texturenofocus>
+            </control>            
         </control>        
         
 	</controls>
