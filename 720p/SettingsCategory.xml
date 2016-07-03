@@ -2,73 +2,27 @@
 <window>
 	<defaultcontrol>3</defaultcontrol>
 	<controls>
-		<include>CommonBackground</include>
-		<control type="image">
-			<left>0</left>
-			<top>100r</top>
-			<width>1280</width>
-			<height>100</height>
-			<texture>floor.png</texture>
-			<include>VisibleFadeEffect</include>
-		</control>
+
 		<control type="group">
-			<left>90</left>
-			<top>30</top>
-			<animation type="WindowOpen" reversible="false">
-				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="225" />
-				<effect type="fade" start="0" end="100" time="225" />
-			</animation>
-			<animation type="WindowClose" reversible="false">
-				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="225" />
-				<effect type="fade" start="100" end="0" time="225" />
-			</animation>
+			<left>0</left>
+			<top>0</top>
+
 			<control type="image">
 				<left>5</left>
 				<top>5</top>
-				<width>1090</width>
-				<height>630</height>
+				<width>1280</width>
+				<height>720</height>
 				<texture border="15">ContentPanel.png</texture>
 			</control>
-			<control type="image">
-				<left>5</left>
-				<top>625</top>
-				<width>1090</width>
-				<height>64</height>
-				<texture border="15">ContentPanelMirror.png</texture>
-			</control>
-			<control type="button">
-				<description>Close Window button</description>
-				<left>980</left>
-				<top>11</top>
-				<width>64</width>
-				<height>32</height>
-				<label>-</label>
-				<font>-</font>
-				<onclick>PreviousMenu</onclick>
-				<texturefocus>DialogCloseButton-focus.png</texturefocus>
-				<texturenofocus>DialogCloseButton.png</texturenofocus>
-				<onleft>1</onleft>
-				<onright>1</onright>
-				<onup>1</onup>
-				<ondown>1</ondown>
-				<visible>system.getbool(input.enablemouse)</visible>
-				<include>VisibleFadeEffect</include>
-			</control>
-			<control type="image">
-				<description>LOGO</description>
-				<left>30</left>
-				<top>15</top>
-				<width>220</width>
-				<height>80</height>
-				<aspectratio>keep</aspectratio>
-				<texture>Confluence_Logo.png</texture>
-			</control>
+
+
+
 			<control type="grouplist" id="3">
 				<description>button area</description>
-				<left>10</left>
-				<top>90</top>
+				<left>0</left>
+				<top>0</top>
 				<width>260</width>
-				<height>481</height>
+				<height>720</height>
 				<itemgap>-1</itemgap>
 				<onleft>5</onleft>
 				<onright>5</onright>
@@ -77,9 +31,9 @@
 			</control>
 			<control type="button" id="20">
 				<description>Setting level button</description>
-				<left>10</left>
-				<top>562</top>
-				<height>60</height>
+				<left>0</left>
+				<top>80r</top>
+				<height>80</height>
 				<width>260</width>
 				<label>10037</label>
 				<textoffsetx>20</textoffsetx>
@@ -99,8 +53,8 @@
 				<onclick>SettingsLevelChange</onclick>
 			</control>
 			<control type="label">
-				<left>20</left>
-				<top>566</top>
+				<left>0</left>
+				<top>80r</top>
 				<height>25</height>
 				<width>230</width>
 				<label>31142</label>
@@ -109,20 +63,7 @@
 				<align>right</align>
 				<aligny>center</aligny>
 			</control>
-			<control type="image">
-				<left>268</left>
-				<top>10</top>
-				<width>790</width>
-				<height>618</height>
-				<texture border="5">black-back2.png</texture>
-			</control>
-			<control type="image">
-				<left>268</left>
-				<top>10</top>
-				<width>790</width>
-				<height>52</height>
-				<texture>dialogheader.png</texture>
-			</control>
+
 			<control type="label">
 				<description>header label</description>
 				<left>300</left>
@@ -138,54 +79,29 @@
 			</control>
 			<control type="grouplist" id="5">
 				<description>control area</description>
-				<left>290</left>
+				<left>260</left>
 				<top>70</top>
-				<width>750</width>
-				<height>435</height>
+				<width>1020</width>
+				<height>560</height>
 				<itemgap>-1</itemgap>
-				<pagecontrol>60</pagecontrol>
-				<onleft>3</onleft>
-				<onright>60</onright>
-				<onup>5</onup>
-				<ondown>5</ondown>
+				<pagecontrol>-</pagecontrol>
+
 			</control>
-			<control type="scrollbar" id="60">
-				<left>1060</left>
-				<top>60</top>
-				<width>25</width>
-				<height>435</height>
-				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-				<textureslidernib>ScrollBarNib.png</textureslidernib>
-				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-				<onleft>5</onleft>
-				<onright>3</onright>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
-			</control>
-			<control type="image">
-				<description>separator image</description>
-				<left>290</left>
-				<top>525</top>
-				<width>750</width>
-				<height>2</height>
-				<texture>separator2.png</texture>
-				<colordiffuse>40FFFFFF</colordiffuse>
-			</control>
+
+
 			<control type="textbox" id="6">
 				<description>description area</description>
-				<left>297</left>
-				<top>532</top>
-				<width>736</width>
-				<height>83</height>
+				<left>260</left>
+				<top>80r</top>
+				<width>1020</width>
+				<height>80</height>
 				<font>font12</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
 				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 			</control>
 		</control>
-		<include>BehindDialogFadeOut</include>
+
 		<control type="button" id="10">
 			<description>Default Category Button</description>
 			<height>60</height>
@@ -204,7 +120,7 @@
 			<description>Default Button</description>
 			<left>0</left>
 			<top>0</top>
-			<height>40</height>
+			<height>60</height>
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
@@ -216,7 +132,7 @@
 			<description>Default RadioButton</description>
 			<left>0</left>
 			<top>0</top>
-			<height>40</height>
+			<height>60</height>
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
@@ -227,7 +143,7 @@
 			<description>Default SpinControlex</description>
 			<left>0</left>
 			<top>0</top>
-			<height>40</height>
+			<height>60</height>
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
@@ -240,7 +156,7 @@
 			<description>Default Slider</description>
 			<posx>0</posx>
 			<posy>0</posy>
-			<height>40</height>
+			<height>60</height>
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
@@ -257,7 +173,7 @@
 			<description>Default Label</description>
 			<left>0</left>
 			<top>0</top>
-			<height>30</height>
+			<height>60</height>
 			<label>-</label>
 			<align>center</align>
 			<aligny>bottom</aligny>
@@ -274,15 +190,6 @@
 			<font>-</font>
 			<visible>false</visible>
 		</control>
-		<control type="group">
-			<depth>DepthFooter</depth>
-			<include>CommonNowPlaying</include>
-		</control>
-		<include>MainWindowMouseButtons</include>
-		<include name="CommonWindowHeader">
-			<param name="Icon" value="icon_system" />
-			<param name="Label" value="$LOCALIZE[5]" />
-			<param name="ShowLabel2" value="true" />
-		</include>
+
 	</controls>
 </window>
