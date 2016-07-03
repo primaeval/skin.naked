@@ -12,8 +12,8 @@
 			<include>VisibleFadeEffect</include>
 			<visible>!Window.IsVisible(numericinput)</visible>
 			<include name="DialogBackgroundCommons">
-				<param name="DialogBackgroundWidth" value="860" />
-				<param name="DialogBackgroundHeight" value="430" />
+				<param name="DialogBackgroundWidth" value="960" />
+				<param name="DialogBackgroundHeight" value="530" />
 				<param name="DialogHeaderWidth" value="780" />
 				<param name="DialogHeaderLabel" value="" />
 				<param name="DialogHeaderId" value="311" />

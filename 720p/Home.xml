@@ -2,149 +2,102 @@
 <window>
     <defaultcontrol always="true">9000</defaultcontrol>
     <controls>
-        
-<control type="list" id="50">
-      <description>My first list container</description>
-      <left>0</left>
-      <top>0</top>
-      <width>1280</width>
-      <height>720</height>
-      <visible>true</visible>
-      <viewtype label="list">list</viewtype>
-      <orientation>vertical</orientation>
-      <pagecontrol>-</pagecontrol>
-      <autoscroll>false</autoscroll>
-      <scrolltime>0</scrolltime>
-      <itemlayout width="1280" height="72">
+        <control type="list" id="50">
+            <description>My first list container</description>
+            <left>0</left>
+            <top>0</top>
+            <width>1280</width>
+            <height>720</height>
+            <visible>true</visible>
+            <viewtype label="list">list</viewtype>
+            <orientation>vertical</orientation>
+            <pagecontrol>-</pagecontrol>
+            <autoscroll>false</autoscroll>
+            <scrolltime>0</scrolltime>
+            <itemlayout width="1280" height="72">
                 <control type="image">
-                        <left>1</left>
-                        <top>1</top>
-                        <width>64</width>
-                        <height>64</height>
-                        <info>ListItem.Icon</info>
+                    <left>1</left>
+                    <top>1</top>
+                    <width>64</width>
+                    <height>64</height>
+                    <info>ListItem.Icon</info>
                 </control>
                 <control type="label">
-                        <left>66</left>
-                        <top>0</top>
-                        <width>1000</width>
-                        <height>60</height>
-                        <font>font_MainMenu</font>
-                        <aligny>center</aligny>
-						<textcolor>grey2</textcolor>
-						<selectedcolor>selected</selectedcolor>
-                        <align>left</align>
-                        <info>ListItem.Label</info>
+                    <left>66</left>
+                    <top>0</top>
+                    <width>1000</width>
+                    <height>60</height>
+                    <font>font_MainMenu</font>
+                    <aligny>center</aligny>
+                    <textcolor>grey2</textcolor>
+                    <selectedcolor>selected</selectedcolor>
+                    <align>left</align>
+                    <info>ListItem.Label</info>
                 </control>
-                <control type="label">
-                        <left>1000</left>
-                        <top>0</top>
-                        <width>200</width>
-                        <height>60</height>
-                        <font>font_MainMenu</font>
-                        <aligny>center</aligny>
-						<textcolor>grey2</textcolor>
-						<selectedcolor>selected</selectedcolor>
-                        <textcolor>grey</textcolor>
-                        <align>right</align>
-                        <info>ListItem.Label2</info>
-                </control>
-      </itemlayout>
-      <focusedlayout width="1280" height="72">
+            </itemlayout>
+            <focusedlayout width="1280" height="72">
                 <control type="image">
-                        <left>1</left>
-                        <top>1</top>
-                        <width>64</width>
-                        <height>64</height>
-                        <info>ListItem.Icon</info>
+                    <left>1</left>
+                    <top>1</top>
+                    <width>64</width>
+                    <height>64</height>
+                    <info>ListItem.Icon</info>
                 </control>
                 <control type="label">
-                        <left>66</left>
-                        <top>0</top>
-                        <width>1000</width>
-                        <height>60</height>
-                        <font>font_MainMenu</font>
-                        <aligny>center</aligny>
-						<textcolor>white</textcolor>
-						<selectedcolor>selected</selectedcolor>
-                        <align>left</align>
-                        <info>ListItem.Label</info>
+                    <left>66</left>
+                    <top>0</top>
+                    <width>1000</width>
+                    <height>60</height>
+                    <font>font_MainMenu</font>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                    <selectedcolor>selected</selectedcolor>
+                    <align>left</align>
+                    <info>ListItem.Label</info>
                 </control>
-                <control type="label">
-                        <left>1000</left>
-                        <top>0</top>
-                        <width>200</width>
-                        <height>60</height>
-                        <font>font_MainMenu</font>
-                        <aligny>center</aligny>
-						<textcolor>white</textcolor>
-						<selectedcolor>selected</selectedcolor>
-                        <textcolor>grey</textcolor>
-                        <align>right</align>
-                        <info>ListItem.Label2</info>
-                </control>
-      </focusedlayout>      
-<content>
-
-  <item id="1">
-    <label>video</label>
-    <onclick>ActivateWindow(video)</onclick>
-  </item>
-  <item id="1">
-    <label>music</label>
-    <onclick>ActivateWindow(music)</onclick>
-  </item>  
-
-  
-  <item id="1">
-    <label>favourites</label>
-    <onclick>ActivateWindow(favourites)</onclick>
-  </item>
-  
-  <item id="1">
-    <label>programs</label>
-    <onclick>ActivateWindow(programs)</onclick>
-  </item>
-  
-  <item id="1">
-    <label>addonbrowser</label>
-    <onclick>ActivateWindow(addonbrowser)</onclick>
-  </item>
-  
-  <item id="1">
-    <label>settings</label>
-    <onclick>ActivateWindow(settings)</onclick>
-  </item>
-  
-  <item id="1">
-    <label>filemanager</label>
-    <onclick>ActivateWindow(filemanager)</onclick>
-  </item>
-
-
-  <item id="1">
-    <label>systeminfo</label>
-    <onclick>ActivateWindow(systeminfo)</onclick>
-  </item>
-
-  <item id="1">
-    <label>profiles</label>
-    <onclick>ActivateWindow(profiles)</onclick>
-  </item>
-
-
-  <item id="1">
-    <label>shutdown</label>
-    <onclick>ActivateWindow(ShutdownMenu)</onclick>
-  </item>
-  
-
-  
-  
-  
-  
-  
-  
-  </content>      
-</control>
+            </focusedlayout>      
+            <content>
+                <item id="1">
+                    <label>Video</label>
+                    <onclick>ActivateWindow(video)</onclick>
+                </item>
+                <item id="1">
+                    <label>Music</label>
+                    <onclick>ActivateWindow(music)</onclick>
+                </item>  
+                <item id="1">
+                    <label>Favourites</label>
+                    <onclick>ActivateWindow(favourites)</onclick>
+                </item>
+                <item id="1">
+                    <label>Programs</label>
+                    <onclick>ActivateWindow(programs)</onclick>
+                </item>
+                <item id="1">
+                    <label>Addons</label>
+                    <onclick>ActivateWindow(addonbrowser)</onclick>
+                </item>
+                <item id="1">
+                    <label>Settings</label>
+                    <onclick>ActivateWindow(settings)</onclick>
+                </item>
+                <item id="1">
+                    <label>File Manager</label>
+                    <onclick>ActivateWindow(filemanager)</onclick>
+                </item>
+                <item id="1">
+                    <label>System Info</label>
+                    <onclick>ActivateWindow(systeminfo)</onclick>
+                </item>
+                <item id="1">
+                    <label>Profiles</label>
+                    <onclick>ActivateWindow(profiles)</onclick>
+                </item>
+                <item id="1">
+                    <label>Power</label>
+                    <onclick>ActivateWindow(ShutdownMenu)</onclick>
+                </item>
+            </content>      
+        </control>
     </controls>   
 </window>
