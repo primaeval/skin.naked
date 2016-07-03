@@ -159,27 +159,27 @@
 					<ondown>450</ondown>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime>200</scrolltime>
-					<itemlayout height="40" width="620">
+					<itemlayout height="80" width="620">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<width>620</width>
-							<height>41</height>
+							<height>82</height>
 							<texture border="5">MenuItemNF.png</texture>
 						</control>
 						<control type="image">
 							<left>10</left>
 							<top>2</top>
-							<width>38</width>
-							<height>38</height>
+							<width>76</width>
+							<height>76</height>
 							<texture>$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
-							<left>55</left>
+							<left>80</left>
 							<top>0</top>
 							<width>560</width>
-							<height>40</height>
+							<height>80</height>
 							<font>font13</font>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -187,12 +187,12 @@
 							<info>ListItem.Label</info>
 						</control>
 					</itemlayout>
-					<focusedlayout height="40" width="620">
+					<focusedlayout height="80" width="620">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<width>620</width>
-							<height>41</height>
+							<height>82</height>
 							<visible>!Control.HasFocus(450)</visible>
 							<texture border="5">MenuItemNF.png</texture>
 						</control>
@@ -200,23 +200,23 @@
 							<left>0</left>
 							<top>0</top>
 							<width>620</width>
-							<height>41</height>
+							<height>82</height>
 							<visible>Control.HasFocus(450)</visible>
 							<texture border="5">MenuItemFO.png</texture>
 						</control>
 						<control type="image">
 							<left>10</left>
 							<top>2</top>
-							<width>38</width>
-							<height>38</height>
+							<width>76</width>
+							<height>76</height>
 							<texture>$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
-							<left>55</left>
+							<left>80</left>
 							<top>0</top>
 							<width>560</width>
-							<height>40</height>
+							<height>80</height>
 							<font>font13</font>
 							<align>left</align>
 							<aligny>center</aligny>
