@@ -1,97 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol always="true">50</defaultcontrol>
-	<menucontrol>9000</menucontrol>
-	<onload condition="!Skin.HasSetting(FirstTimeRun)">ActivateWindow(1112)</onload>
-	<views>50,51,500,550,551</views>
-	<controls>
-		<include>CommonBackground</include>
-		<include>ContentPanelBackgrounds</include>
-		<control type="group">
-			<include>Window_OpenClose_Animation</include>
-			<!-- view id = 50 -->
-			<include>CommonRootView</include>
-			<!-- view id = 51 -->
-			<include>FullWidthList</include>
-			<!-- view id = 500 -->
-			<include>ThumbnailView</include>
-			<!-- view id = 550 -->
-			<include>AddonInfoListView1</include>
-			<!-- view id = 551 -->
-			<include>AddonInfoThumbView1</include>
-		</control>
-		<control type="group">
-			<depth>DepthFooter</depth>
-			<include>CommonPageCount</include>
-			<include>CommonNowPlaying</include>
-		</control>
-		<include>MainWindowMouseButtons</include>
-		<include>BehindDialogFadeOut</include>
-		<include>ScrollOffsetLabel</include>
-		<include name="CommonWindowHeader">
-			<param name="Icon" value="icon_addons" />
-			<param name="Label" value="$LOCALIZE[0]" />
-		</include>
-		<control type="group">
-			<left>-250</left>
-			<include>SideBladeLeft</include>
-			<control type="grouplist" id="9000">
-				<left>0</left>
-				<top>110</top>
-				<width>250</width>
-				<height>600</height>
-				<onleft>9000</onleft>
-				<onright>50</onright>
-				<onup>9000</onup>
-				<ondown>9000</ondown>
-				<onback>50</onback>
-				<itemgap>0</itemgap>
-				<control type="label" id="200">
-					<width>250</width>
-					<height>35</height>
-					<font>font12</font>
-					<label>31006</label>
-					<textcolor>blue</textcolor>
-					<align>center</align>
-					<aligny>center</aligny>
-				</control>
-				<control type="button" id="2">
-					<description>View As button</description>
-					<textwidth>235</textwidth>
-					<include>ButtonCommonValues</include>
-					<label>-</label>
-				</control>
-				<control type="button" id="3">
-					<description>Sort by button</description>
-					<include>ButtonCommonValues</include>
-					<label>103</label>
-				</control>
-				<control type="togglebutton" id="4">
-					<description>Sort asc</description>
-					<include>ButtonCommonValues</include>
-					<alttexturefocus border="5">button-focus.png</alttexturefocus>
-					<alttexturenofocus>-</alttexturenofocus>
-					<label>31051</label>
-					<altlabel>31050</altlabel>
-					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
-				</control>
-				<control type="edit" id="19">
-					<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
-					<description>Filter</description>
-					<textwidth>230</textwidth>
-					<include>ButtonCommonValues</include>
-					<label>587</label>
-				</control>
-				<control type="radiobutton" id="20">
-					<visible>Container.CanFilterAdvanced</visible>
-					<description>Filter</description>
-					<include>ButtonCommonValues</include>
-					<label>587</label>
-					<onclick>right</onclick>
-					<onclick>Filter</onclick>
-				</control>
-				<include>CommonNowPlaying_Controls</include>
-			</control>
-		</control>
-	</controls>
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <controls>
+        <control type="list" id="50">
+            <visible>true</visible>
+            <description>Simple Wide List</description>
+            <left>0</left>
+            <top>0</top>
+            <width>1100</width>
+            <height>720</height>
+            <visible>true</visible>
+            <viewtype label="list">list</viewtype>
+            <orientation>vertical</orientation>
+            <pagecontrol>-</pagecontrol>
+            <autoscroll>false</autoscroll>
+            <scrolltime>0</scrolltime>
+            <itemlayout width="1000" height="72">
+                <control type="image">
+                    <left>1</left>
+                    <top>1</top>
+                    <width>128</width>
+                    <height>64</height>
+                    <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+                    <info>ListItem.Icon</info>
+                </control>
+                <control type="label">
+                    <left>134</left>
+                    <top>0</top>
+                    <width>900</width>
+                    <height>60</height>
+                    <font>font_MainMenu</font>
+                    <aligny>center</aligny>
+                    <textcolor>grey2</textcolor>
+                    <selectedcolor>selected</selectedcolor>
+                    <align>left</align>
+                    <info>ListItem.Label</info>
+                </control>
+            </itemlayout>
+            <focusedlayout width="1000" height="72">
+                <control type="image">
+                    <left>1</left>
+                    <top>1</top>
+                    <width>128</width>
+                    <height>64</height>
+                    <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+                    <info>ListItem.Icon</info>
+                </control>
+                <control type="label">
+                    <left>134</left>
+                    <top>0</top>
+                    <width>900</width>
+                    <height>60</height>
+                    <font>font_MainMenu</font>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                    <selectedcolor>selected</selectedcolor>
+                    <align>left</align>
+                    <info>ListItem.Label</info>
+                </control>
+            </focusedlayout>
+        </control>
+        <control type="grouplist" id="51">
+            <description>Player Controls</description>
+            <left>128r</left>
+            <top>0</top>
+            <width>128</width>
+            <height>720</height>
+            <itemgap>0</itemgap>
+            <pagecontrol>-</pagecontrol>
+            <scrolltime >0</scrolltime>
+            <orientation>vertical</orientation>
+            <usecontrolcoords>false</usecontrolcoords>
+            <visible>true</visible>
+            <align>left</align>
+            <control type="button" id="601">
+                <width>96</width>
+                <height>96</height>
+                <texturefocus>OSDPrevTrackFO.png</texturefocus>
+                <texturenofocus>OSDPrevTrackNF.png</texturenofocus>
+                <onclick>PlayerControl(Previous)</onclick>
+            </control>
+            <control type="button" id="602">
+                <width>96</width>
+                <height>96</height>
+                <texturefocus>OSDRewindFO.png</texturefocus>
+                <texturenofocus>OSDRewindNF.png</texturenofocus>
+                <onclick>PlayerControl(Rewind)</onclick>
+            </control>
+            <control type="togglebutton" id="603">
+                <width>96</width>
+                <height>96</height>
+                <texturefocus>OSDPauseFO.png</texturefocus>
+                <texturenofocus>OSDPauseNF.png</texturenofocus>
+                <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
+                <alttexturefocus>OSDPlayFO.png</alttexturefocus>
+                <alttexturenofocus>OSDPlayNF.png</alttexturenofocus>
+                <onclick>PlayerControl(Play)</onclick>
+            </control>
+            <control type="button" id="604">
+                <width>96</width>
+                <height>96</height>
+                <texturefocus>OSDStopFO.png</texturefocus>
+                <texturenofocus>OSDStopNF.png</texturenofocus>
+                <onclick>PlayerControl(Stop)</onclick>
+            </control>
+            <control type="button" id="605">
+                <width>96</width>
+                <height>96</height>
+                <texturefocus>OSDForwardFO.png</texturefocus>
+                <texturenofocus>OSDForwardNF.png</texturenofocus>
+                <onclick>PlayerControl(Forward)</onclick>
+            </control>
+            <control type="button" id="606">
+                <width>96</width>
+                <height>96</height>
+                <texturefocus>OSDNextTrackFO.png</texturefocus>
+                <texturenofocus>OSDNextTrackNF.png</texturenofocus>
+                <onclick>PlayerControl(Next)</onclick>
+            </control>
+            <control type="button" id="607">
+                <width>96</width>
+                <height>96</height>
+                <texturefocus>GoFullscreen.png</texturefocus>
+                <texturenofocus>GoFullscreen.png</texturenofocus>
+                <onclick>fullscreen</onclick>
+                <visible>Player.HasMedia</visible>
+            </control>
+        </control>
+    </controls>
 </window>
