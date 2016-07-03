@@ -85,7 +85,7 @@
                 <height>96</height>
                 <texturefocus>OSDRewindFO.png</texturefocus>
                 <texturenofocus>OSDRewindNF.png</texturenofocus>
-                <onclick>PlayerControl(Rewind)</onclick>
+                <onclick>PlayerControl(SmallSkipBackward)</onclick>
             </control>
             <control type="togglebutton" id="603">
                 <width>96</width>
@@ -109,7 +109,7 @@
                 <height>96</height>
                 <texturefocus>OSDForwardFO.png</texturefocus>
                 <texturenofocus>OSDForwardNF.png</texturenofocus>
-                <onclick>PlayerControl(Forward)</onclick>
+                <onclick>PlayerControl(SmallSkipForward)</onclick>
             </control>
             <control type="button" id="606">
                 <width>96</width>

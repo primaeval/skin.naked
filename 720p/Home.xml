@@ -84,54 +84,16 @@
                 </control>
       </focusedlayout>      
 <content>
-  <item id="1">
-    <label>home</label>
-    <onclick>ActivateWindow(home)</onclick>
-  </item>
-  <item id="1">
-    <label>programs</label>
-    <onclick>ActivateWindow(programs)</onclick>
-  </item>
-  <item id="1">
-    <label>filemanager</label>
-    <onclick>ActivateWindow(filemanager)</onclick>
-  </item>
-  <item id="1">
-    <label>settings</label>
-    <onclick>ActivateWindow(settings)</onclick>
-  </item>
-  <item id="1">
-    <label>music</label>
-    <onclick>ActivateWindow(music)</onclick>
-  </item>  
+
   <item id="1">
     <label>video</label>
     <onclick>ActivateWindow(video)</onclick>
   </item>
   <item id="1">
-    <label>systeminfo</label>
-    <onclick>ActivateWindow(systeminfo)</onclick>
-  </item>
-  <item id="1">
-    <label>videos</label>
-    <onclick>ActivateWindow(videos)</onclick>
-  </item>
-  <item id="1">
-    <label>profiles</label>
-    <onclick>ActivateWindow(profiles)</onclick>
-  </item>
-  <item id="1">
-    <label>videoplaylist</label>
-    <onclick>ActivateWindow(videoplaylist)</onclick>
+    <label>music</label>
+    <onclick>ActivateWindow(music)</onclick>
   </item>  
-  <item id="1">
-    <label>addonbrowser</label>
-    <onclick>ActivateWindow(addonbrowser)</onclick>
-  </item>
-  <item id="1">
-    <label>playercontrols</label>
-    <onclick>ActivateWindow(playercontrols)</onclick>
-  </item>
+
   
   <item id="1">
     <label>favourites</label>
@@ -139,14 +101,39 @@
   </item>
   
   <item id="1">
-    <label>musicplaylist</label>
-    <onclick>ActivateWindow(musicplaylist)</onclick>
+    <label>programs</label>
+    <onclick>ActivateWindow(programs)</onclick>
   </item>
   
   <item id="1">
-    <label>musiclibrary</label>
-    <onclick>ActivateWindow(musiclibrary)</onclick>
+    <label>addonbrowser</label>
+    <onclick>ActivateWindow(addonbrowser)</onclick>
   </item>
+  
+  <item id="1">
+    <label>settings</label>
+    <onclick>ActivateWindow(settings)</onclick>
+  </item>
+  
+  <item id="1">
+    <label>filemanager</label>
+    <onclick>ActivateWindow(filemanager)</onclick>
+  </item>
+
+
+  <item id="1">
+    <label>systeminfo</label>
+    <onclick>ActivateWindow(systeminfo)</onclick>
+  </item>
+
+  <item id="1">
+    <label>profiles</label>
+    <onclick>ActivateWindow(profiles)</onclick>
+  </item>
+
+
+
+  
 
   
   

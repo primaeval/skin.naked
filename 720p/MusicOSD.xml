@@ -343,5 +343,72 @@
 				<visible>Player.CanRecord</visible>
 			</control>
 		</control>
+        <control type="grouplist" id="51">
+            <description>Player Controls</description>
+            <left>128r</left>
+            <top>0</top>
+            <width>128</width>
+            <height>720</height>
+            <itemgap>0</itemgap>
+            <pagecontrol>-</pagecontrol>
+            <scrolltime >0</scrolltime>
+            <orientation>vertical</orientation>
+            <usecontrolcoords>false</usecontrolcoords>
+            <visible>true</visible>
+            <align>left</align>
+            <control type="button" id="1000">
+                <description>Close Window button</description>
+                <width>96</width>
+                <height>96</height>
+                <onclick>Dialog.Close(MusicOSD,true)</onclick>
+                <texturefocus>DialogCloseButton-focus.png</texturefocus>
+                <texturenofocus>DialogCloseButton.png</texturenofocus>
+            </control>
+            <control type="button" id="601">
+                <width>96</width>
+                <height>96</height>
+                <texturefocus>OSDPrevTrackFO.png</texturefocus>
+                <texturenofocus>OSDPrevTrackNF.png</texturenofocus>
+                <onclick>PlayerControl(BigSkipBackward)</onclick>
+            </control>
+            <control type="button" id="602">
+                <width>96</width>
+                <height>96</height>
+                <texturefocus>OSDRewindFO.png</texturefocus>
+                <texturenofocus>OSDRewindNF.png</texturenofocus>
+                <onclick>PlayerControl(SmallSkipBackward)</onclick>
+            </control>
+            <control type="togglebutton" id="603">
+                <width>96</width>
+                <height>96</height>
+                <texturefocus>OSDPauseFO.png</texturefocus>
+                <texturenofocus>OSDPauseNF.png</texturenofocus>
+                <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
+                <alttexturefocus>OSDPlayFO.png</alttexturefocus>
+                <alttexturenofocus>OSDPlayNF.png</alttexturenofocus>
+                <onclick>PlayerControl(Play)</onclick>
+            </control>
+            <control type="button" id="604">
+                <width>96</width>
+                <height>96</height>
+                <texturefocus>OSDStopFO.png</texturefocus>
+                <texturenofocus>OSDStopNF.png</texturenofocus>
+                <onclick>PlayerControl(Stop)</onclick>
+            </control>
+            <control type="button" id="605">
+                <width>96</width>
+                <height>96</height>
+                <texturefocus>OSDForwardFO.png</texturefocus>
+                <texturenofocus>OSDForwardNF.png</texturenofocus>
+                <onclick>PlayerControl(SmallSkipForward)</onclick>
+            </control>
+            <control type="button" id="606">
+                <width>96</width>
+                <height>96</height>
+                <texturefocus>OSDNextTrackFO.png</texturefocus>
+                <texturenofocus>OSDNextTrackNF.png</texturenofocus>
+                <onclick>PlayerControl(BigSkipForward)</onclick>
+            </control>
+        </control>        
 	</controls>
 </window>
