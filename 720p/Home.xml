@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol always="true">9000</defaultcontrol>
     <controls>
-        <control type="list" id="50">
+        <control type="panel" id="50">
             <description>My first list container</description>
             <left>0</left>
             <top>0</top>
@@ -10,23 +10,23 @@
             <height>720</height>
             <visible>true</visible>
             <viewtype label="list">list</viewtype>
-            <orientation>vertical</orientation>
+            <orientation>horizontal</orientation>
             <pagecontrol>-</pagecontrol>
             <autoscroll>false</autoscroll>
             <scrolltime>0</scrolltime>
-            <itemlayout width="1280" height="72">
+            <itemlayout width="640" height="120">
                 <control type="image">
                     <left>1</left>
                     <top>1</top>
-                    <width>64</width>
-                    <height>64</height>
+                    <width>128</width>
+                    <height>128</height>
                     <info>ListItem.Icon</info>
                 </control>
                 <control type="label">
-                    <left>66</left>
+                    <left>128</left>
                     <top>0</top>
-                    <width>1000</width>
-                    <height>60</height>
+                    <width>640</width>
+                    <height>128</height>
                     <font>font_MainMenu</font>
                     <aligny>center</aligny>
                     <textcolor>grey2</textcolor>
@@ -35,19 +35,19 @@
                     <info>ListItem.Label</info>
                 </control>
             </itemlayout>
-            <focusedlayout width="1280" height="72">
+            <focusedlayout width="640" height="120">
                 <control type="image">
                     <left>1</left>
                     <top>1</top>
-                    <width>64</width>
-                    <height>64</height>
+                    <width>128</width>
+                    <height>128</height>
                     <info>ListItem.Icon</info>
                 </control>
                 <control type="label">
-                    <left>66</left>
+                    <left>128</left>
                     <top>0</top>
-                    <width>1000</width>
-                    <height>60</height>
+                    <width>640</width>
+                    <height>128</height>
                     <font>font_MainMenu</font>
                     <aligny>center</aligny>
                     <textcolor>white</textcolor>
@@ -89,6 +89,17 @@
                     <icon>settings.png</icon>
                 </item>
                 <item id="1">
+                    <label>Video Playlist</label>
+                    <onclick>ActivateWindow(videoplaylist)</onclick>
+                    <icon>movies.png</icon>
+                </item>                   
+                <item id="1">
+                    <label>Music Playlist</label>
+                    <onclick>ActivateWindow(musicplaylist)</onclick>
+                    <icon>music.png</icon>
+                </item>
+                   
+                <item id="1">
                     <label>File Manager</label>
                     <onclick>ActivateWindow(filemanager)</onclick>
                     <icon>lists.png</icon>
@@ -108,16 +119,7 @@
                     <onclick>ActivateWindow(ShutdownMenu)</onclick>
                     <icon>live.png</icon>
                 </item>
-                <item id="1">
-                    <label>Music Playlist</label>
-                    <onclick>ActivateWindow(musicplaylist)</onclick>
-                    <icon>music.png</icon>
-                </item>
-                <item id="1">
-                    <label>Video Playlist</label>
-                    <onclick>ActivateWindow(videoplaylist)</onclick>
-                    <icon>movies.png</icon>
-                </item>                
+          
             </content>      
         </control>
     </controls>   
