@@ -21,6 +21,7 @@
                     <width>128</width>
                     <height>128</height>
                     <info>ListItem.Icon</info>
+                    <colordiffuse>grey</colordiffuse>
                 </control>
                 <control type="label">
                     <left>128</left>
@@ -30,6 +31,7 @@
                     <font>font_MainMenu</font>
                     <aligny>center</aligny>
                     <textcolor>grey2</textcolor>
+
                     <selectedcolor>selected</selectedcolor>
                     <align>left</align>
                     <info>ListItem.Label</info>
@@ -51,6 +53,7 @@
                     <font>font_MainMenu</font>
                     <aligny>center</aligny>
                     <textcolor>white</textcolor>
+
                     <selectedcolor>selected</selectedcolor>
                     <align>left</align>
                     <info>ListItem.Label</info>
@@ -58,22 +61,22 @@
             </focusedlayout>      
             <content>
                 <item id="1">
-                    <label>[COLOR orange][B]Video[/B][/COLOR]</label>
+                    <label>Video</label>
                     <onclick>ActivateWindow(video)</onclick>
                     <icon>movies.png</icon>
                 </item>
                 <item id="1">
-                    <label>[COLOR yellow][B]Music[/B][/COLOR]</label>
+                    <label>Music</label>
                     <onclick>ActivateWindow(music)</onclick>
                     <icon>music.png</icon>
                 </item>  
                 <item id="1">
-                    <label>[COLOR blue][B]Programs[/B][/COLOR]</label>
+                    <label>Programs</label>
                     <onclick>ActivateWindow(programs)</onclick>
                     <icon>genre_soap.png</icon>
                 </item>                
                 <item id="1">
-                    <label>[COLOR green]Favourites[/COLOR]</label>
+                    <label>Favourites</label>
                     <onclick>ActivateWindow(favourites)</onclick>
                     <icon>favourites.png</icon>
                 </item>
@@ -92,7 +95,7 @@
                     <label>Video Playlist</label>
                     <onclick>ActivateWindow(videoplaylist)</onclick>
                     <icon>movies.png</icon>
-                </item>                   
+                </item>                
                 <item id="1">
                     <label>Music Playlist</label>
                     <onclick>ActivateWindow(musicplaylist)</onclick>
@@ -115,7 +118,7 @@
                     <icon>genre_family.png</icon>
                 </item>
                 <item id="1">
-                    <label>[COLOR red]Power[/COLOR]</label>
+                    <label>Power</label>
                     <onclick>ActivateWindow(ShutdownMenu)</onclick>
                     <icon>live.png</icon>
                 </item>
