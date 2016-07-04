@@ -1,65 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">9000</defaultcontrol>
-    <controls>
-        <control type="list" id="50">
-            <visible>true</visible>
-            <description>Simple Wide List</description>
-            <left>0</left>
-            <top>0</top>
-            <width>1100</width>
-            <height>720</height>
-            <visible>true</visible>
-            <viewtype label="list">list</viewtype>
-            <orientation>vertical</orientation>
-            <pagecontrol>-</pagecontrol>
-            <autoscroll>false</autoscroll>
-            <scrolltime>0</scrolltime>
-            <itemlayout width="1000" height="72">
-                <control type="image">
-                    <left>1</left>
-                    <top>1</top>
-                    <width>128</width>
-                    <height>64</height>
-                    <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
-                    <info>ListItem.Icon</info>
-                </control>
-                <control type="label">
-                    <left>134</left>
-                    <top>0</top>
-                    <width>900</width>
-                    <height>60</height>
-                    <font>font_MainMenu</font>
-                    <aligny>center</aligny>
-                    <textcolor>grey2</textcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>left</align>
-                    <info>ListItem.Label</info>
-                </control>
-            </itemlayout>
-            <focusedlayout width="1000" height="72">
-                <control type="image">
-                    <left>1</left>
-                    <top>1</top>
-                    <width>128</width>
-                    <height>64</height>
-                    <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
-                    <info>ListItem.Icon</info>
-                </control>
-                <control type="label">
-                    <left>134</left>
-                    <top>0</top>
-                    <width>900</width>
-                    <height>60</height>
-                    <font>font_MainMenu</font>
-                    <aligny>center</aligny>
-                    <textcolor>white</textcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>left</align>
-                    <info>ListItem.Label</info>
-                </control>
-            </focusedlayout>
-        </control>
-
-    </controls>
+    <views>50,500</views>
+    <include>views</include>
 </window>
