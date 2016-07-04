@@ -181,7 +181,7 @@
 						<top>32r</top>
 						<width>200</width>
 						<height>25</height>
-						<font>font12</font>
+						<font>font14</font>
 						<textcolor>black</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>center</align>
@@ -214,7 +214,7 @@
 						<top>0</top>
 						<width>200</width>
 						<height>25</height>
-						<font>font12</font>
+						<font>font14</font>
 						<textcolor>white</textcolor>
                         <shadowcolor>ff000000</shadowcolor>
 						<selectedcolor>selected</selectedcolor>
