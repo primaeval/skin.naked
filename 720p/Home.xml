@@ -58,45 +58,66 @@
             </focusedlayout>      
             <content>
                 <item id="1">
-                    <label>Video</label>
+                    <label>[COLOR orange][B]Video[/B][/COLOR]</label>
                     <onclick>ActivateWindow(video)</onclick>
+                    <icon>movies.png</icon>
                 </item>
                 <item id="1">
-                    <label>Music</label>
+                    <label>[COLOR yellow][B]Music[/B][/COLOR]</label>
                     <onclick>ActivateWindow(music)</onclick>
+                    <icon>music.png</icon>
                 </item>  
                 <item id="1">
-                    <label>Favourites</label>
-                    <onclick>ActivateWindow(favourites)</onclick>
-                </item>
-                <item id="1">
-                    <label>Programs</label>
+                    <label>[COLOR blue][B]Programs[/B][/COLOR]</label>
                     <onclick>ActivateWindow(programs)</onclick>
+                    <icon>genre_soap.png</icon>
+                </item>                
+                <item id="1">
+                    <label>[COLOR green]Favourites[/COLOR]</label>
+                    <onclick>ActivateWindow(favourites)</onclick>
+                    <icon>favourites.png</icon>
                 </item>
+
                 <item id="1">
                     <label>Addons</label>
                     <onclick>ActivateWindow(addonbrowser)</onclick>
+                    <icon>genre_foreign.png</icon>
                 </item>
                 <item id="1">
                     <label>Settings</label>
                     <onclick>ActivateWindow(settings)</onclick>
+                    <icon>settings.png</icon>
                 </item>
                 <item id="1">
                     <label>File Manager</label>
                     <onclick>ActivateWindow(filemanager)</onclick>
+                    <icon>lists.png</icon>
                 </item>
                 <item id="1">
                     <label>System Info</label>
                     <onclick>ActivateWindow(systeminfo)</onclick>
+                    <icon>settings.png</icon>
                 </item>
                 <item id="1">
                     <label>Profiles</label>
                     <onclick>ActivateWindow(profiles)</onclick>
+                    <icon>genre_family.png</icon>
                 </item>
                 <item id="1">
-                    <label>Power</label>
+                    <label>[COLOR red]Power[/COLOR]</label>
                     <onclick>ActivateWindow(ShutdownMenu)</onclick>
+                    <icon>live.png</icon>
                 </item>
+                <item id="1">
+                    <label>Music Playlist</label>
+                    <onclick>ActivateWindow(musicplaylist)</onclick>
+                    <icon>music.png</icon>
+                </item>
+                <item id="1">
+                    <label>Video Playlist</label>
+                    <onclick>ActivateWindow(videoplaylist)</onclick>
+                    <icon>movies.png</icon>
+                </item>                
             </content>      
         </control>
     </controls>   
