@@ -11,10 +11,10 @@
 	<controls>
 		<control type="button" id="1000">
 			<description>Close Window button</description>
-			<left>84r</left>
-			<top>0</top>
+			<left>64r</left>
+			<top>64r</top>
 			<width>64</width>
-			<height>32</height>
+			<height>64</height>
 			<label>-</label>
 			<font>-</font>
 			<onclick>Dialog.Close(MusicOSD,true)</onclick>
@@ -33,7 +33,7 @@
 			<depth>DepthOSD+</depth>
 			<description>Seek Slider</description>
 			<left>430</left>
-			<top>82r</top>
+			<top>130r</top>
 			<width>720</width>
 			<height>16</height>
 			<onup>702</onup>
@@ -46,8 +46,8 @@
 			<visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVRRadioRDSInfo) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(Addon)]</visible>
 		</control>
 		<control type="grouplist" id="100">
-			<left>325</left>
-			<top>60r</top>
+			<left>0</left>
+			<top>80r</top>
 			<onup>1000</onup>
 			<ondown>1000</ondown>
 			<orientation>horizontal</orientation>
@@ -55,8 +55,8 @@
 			<animation effect="fade" time="150">VisibleChange</animation>
 			<visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVRRadioRDSInfo) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(Addon)]</visible>
 			<control type="button" id="300">
-				<width>55</width>
-				<height>55</height>
+				<width>80</width>
+				<height>80</height>
 				<label>210</label>
 				<font>-</font>
 				<texturefocus>OSDChannelUPFO.png</texturefocus>
@@ -65,8 +65,8 @@
 				<visible>MusicPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="button" id="301">
-				<width>55</width>
-				<height>55</height>
+				<width>80</width>
+				<height>80</height>
 				<label>209</label>
 				<font>-</font>
 				<texturefocus>OSDChannelDownFO.png</texturefocus>
@@ -75,8 +75,8 @@
 				<visible>MusicPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="button" id="600">
-				<width>55</width>
-				<height>55</height>
+				<width>80</width>
+				<height>80</height>
 				<label>210</label>
 				<font>-</font>
 				<texturefocus>OSDPrevTrackFO.png</texturefocus>
@@ -85,8 +85,8 @@
 				<visible>!MusicPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="button" id="601">
-				<width>55</width>
-				<height>55</height>
+				<width>80</width>
+				<height>80</height>
 				<label>31354</label>
 				<font>-</font>
 				<texturefocus>OSDRewindFO.png</texturefocus>
@@ -96,8 +96,8 @@
 				<enable>Player.SeekEnabled</enable>
 			</control>
 			<control type="togglebutton" id="602">
-				<width>55</width>
-				<height>55</height>
+				<width>80</width>
+				<height>80</height>
 				<label>31351</label>
 				<altlabel>208</altlabel>
 				<font>-</font>
@@ -111,8 +111,8 @@
 				<enable>Player.PauseEnabled</enable>
 			</control>
 			<control type="button" id="603">
-				<width>55</width>
-				<height>55</height>
+				<width>80</width>
+				<height>80</height>
 				<label>31352</label>
 				<font>-</font>
 				<texturefocus>OSDStopFO.png</texturefocus>
@@ -120,8 +120,8 @@
 				<onclick>PlayerControl(Stop)</onclick>
 			</control>
 			<control type="button" id="604">
-				<width>55</width>
-				<height>55</height>
+				<width>80</width>
+				<height>80</height>
 				<label>31353</label>
 				<font>-</font>
 				<texturefocus>OSDForwardFO.png</texturefocus>
@@ -131,8 +131,8 @@
 				<enable>Player.SeekEnabled</enable>
 			</control>
 			<control type="button" id="605">
-				<width>55</width>
-				<height>55</height>
+				<width>80</width>
+				<height>80</height>
 				<label>209</label>
 				<font>-</font>
 				<texturefocus>OSDNextTrackFO.png</texturefocus>
@@ -141,8 +141,8 @@
 				<onclick>PlayerControl(Next)</onclick>
 			</control>
 			<control type="button" id="306">
-				<width>55</width>
-				<height>55</height>
+				<width>80</width>
+				<height>80</height>
 				<label>19019</label>
 				<font>-</font>
 				<texturefocus>OSDChannelListFO.png</texturefocus>
@@ -151,8 +151,8 @@
 				<visible>MusicPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="button" id="307">
-				<width>55</width>
-				<height>55</height>
+				<width>80</width>
+				<height>80</height>
 				<label>$LOCALIZE[19029]$INFO[MusicPlayer.ChannelName, - ]</label>
 				<font>-</font>
 				<texturefocus>OSDepgFO.png</texturefocus>
@@ -162,8 +162,8 @@
 			</control>
 			<control type="button" id="308">
 				<visible>RDS.HasRadiotextPlus</visible>
-				<width>55</width>
-				<height>55</height>
+				<width>80</width>
+				<height>80</height>
 				<label>209</label>
 				<font>-</font>
 				<texturefocus>OSDRadioRDSFO.png</texturefocus>
@@ -172,14 +172,14 @@
 				<visible>MusicPlayer.Content(LiveTV) + RDS.HasRadiotextPlus</visible>
 			</control>
 			<control type="group" id="699">
-				<width>55</width>
-				<height>55</height>
+				<width>80</width>
+				<height>80</height>
 				<visible>!MusicPlayer.Content(LiveTV)</visible>
 				<control type="button" id="606">
 					<left>0</left>
 					<top>0</top>
-					<width>55</width>
-					<height>55</height>
+					<width>80</width>
+					<height>80</height>
 					<label>$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</label>
 					<font>-</font>
 					<texturefocus>-</texturefocus>
@@ -193,8 +193,8 @@
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
-					<width>55</width>
-					<height>55</height>
+					<width>80</width>
+					<height>80</height>
 					<texture>OSDRepeatNF.png</texture>
 					<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
 					<visible>!Control.HasFocus(606)</visible>
@@ -202,8 +202,8 @@
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
-					<width>55</width>
-					<height>55</height>
+					<width>80</width>
+					<height>80</height>
 					<texture>OSDRepeatFO.png</texture>
 					<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
 					<visible>Control.HasFocus(606)</visible>
@@ -211,8 +211,8 @@
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
-					<width>55</width>
-					<height>55</height>
+					<width>80</width>
+					<height>80</height>
 					<texture>OSDRepeatOneNF.png</texture>
 					<visible>Playlist.IsRepeatOne</visible>
 					<visible>!Control.HasFocus(606)</visible>
@@ -220,8 +220,8 @@
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
-					<width>55</width>
-					<height>55</height>
+					<width>80</width>
+					<height>80</height>
 					<texture>OSDRepeatOneFO.png</texture>
 					<visible>Playlist.IsRepeatOne</visible>
 					<visible>Control.HasFocus(606)</visible>
@@ -229,8 +229,8 @@
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
-					<width>55</width>
-					<height>55</height>
+					<width>80</width>
+					<height>80</height>
 					<texture>OSDRepeatAllNF.png</texture>
 					<visible>Playlist.IsRepeat</visible>
 					<visible>!Control.HasFocus(606)</visible>
@@ -238,16 +238,16 @@
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
-					<width>55</width>
-					<height>55</height>
+					<width>80</width>
+					<height>80</height>
 					<texture>OSDRepeatAllFO.png</texture>
 					<visible>Playlist.IsRepeat</visible>
 					<visible>Control.HasFocus(606)</visible>
 				</control>
 			</control>
 			<control type="togglebutton" id="607">
-				<width>55</width>
-				<height>55</height>
+				<width>80</width>
+				<height>80</height>
 				<label>$LOCALIZE[590]$INFO[Playlist.Random, : ]</label>
 				<font>-</font>
 				<texturefocus>OSDRandomOffFO.png</texturefocus>
@@ -263,23 +263,23 @@
 				<texture>-</texture>
 			</control>
 			<control type="image" id="2400">
-				<width>55</width>
+				<width>80</width>
 				<texture>-</texture>
 				<visible>!system.getbool(audiooutput.dspaddonsenabled)</visible>
 			</control>
 			<control type="image" id="2500">
-				<width>55</width>
+				<width>80</width>
 				<texture>-</texture>
 				<visible>MusicPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="image" id="2600">
-				<width>55</width>
+				<width>80</width>
 				<texture>-</texture>
 				<visible>!Player.CanRecord</visible>
 			</control>
 			<control type="button" id="700">
-				<width>55</width>
-				<height>55</height>
+				<width>80</width>
+				<height>80</height>
 				<label>15047</label>
 				<font>-</font>
 				<texturefocus>OSDDSPAudioFO.png</texturefocus>
@@ -288,8 +288,8 @@
 				<visible>system.getbool(audiooutput.dspaddonsenabled)</visible>
 			</control>
 			<control type="togglebutton" id="701">
-				<width>55</width>
-				<height>55</height>
+				<width>80</width>
+				<height>80</height>
 				<label>31128</label>
 				<font>-</font>
 				<texturefocus>OSDLyricsFO.png</texturefocus>
@@ -305,16 +305,16 @@
 				<visible>!MusicPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="button" id="500">
-				<width>55</width>
-				<height>55</height>
+				<width>80</width>
+				<height>80</height>
 				<label>12006</label>
 				<font>-</font>
 				<texturefocus>OSDVizFO.png</texturefocus>
 				<texturenofocus>OSDVizNF.png</texturenofocus>
 			</control>
 			<control type="button" id="702">
-				<width>55</width>
-				<height>55</height>
+				<width>80</width>
+				<height>80</height>
 				<label>$LOCALIZE[250] $LOCALIZE[21417]</label>
 				<font>-</font>
 				<texturefocus>OSDPresetSettingsFO.png</texturefocus>
@@ -322,8 +322,8 @@
 				<onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
 			</control>
 			<control type="button" id="703">
-				<width>55</width>
-				<height>55</height>
+				<width>80</width>
+				<height>80</height>
 				<label>31048</label>
 				<font>-</font>
 				<texturefocus>OSDPreFO.png</texturefocus>
@@ -333,8 +333,8 @@
 				<animation effect="fade" start="100" end="50" time="75" condition="!Visualisation.HasPresets">Conditional</animation>
 			</control>
 			<control type="button" id="704">
-				<width>55</width>
-				<height>55</height>
+				<width>80</width>
+				<height>80</height>
 				<label>264</label>
 				<font>-</font>
 				<texturefocus>OSDRecordOffFO.png</texturefocus>
@@ -356,14 +356,7 @@
             <usecontrolcoords>false</usecontrolcoords>
             <visible>true</visible>
             <align>left</align>
-            <control type="button" id="1000">
-                <description>Close Window button</description>
-                <width>96</width>
-                <height>96</height>
-                <onclick>Dialog.Close(MusicOSD,true)</onclick>
-                <texturefocus>DialogCloseButton-focus.png</texturefocus>
-                <texturenofocus>DialogCloseButton.png</texturenofocus>
-            </control>
+
             <control type="button" id="601">
                 <width>96</width>
                 <height>96</height>
