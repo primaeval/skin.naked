@@ -29,6 +29,7 @@
 				<visible>Player.ChapterCount + !VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="label" id="1">
+            
 				<description>Channel Group label</description>
 				<left>30</left>
 				<top>5</top>
@@ -104,6 +105,7 @@
 			<control type="group" id="1">
 				<left>330</left>
 				<top>235r</top>
+
 				<control type="label" id="1">
 					<description>Heading label</description>
 					<left>0</left>
@@ -203,7 +205,7 @@
 					<control type="label" id="1">
 						<width min="10" max="520">auto</width>
 						<height>30</height>
-						<font>font30</font>
+						<font>font16</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[Player.Title]</label>
@@ -462,7 +464,7 @@
 				<label>$LOCALIZE[19005]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13_title</font>
+				<font>font10_title</font>
 				<textcolor>blue</textcolor>
 			</control>
 			<control type="label">
@@ -474,7 +476,7 @@
 				<label>$LOCALIZE[19012]:</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font12</font>
+				<font>font10</font>
 				<textcolor>grey2</textcolor>
 			</control>
 			<control type="label">
@@ -486,7 +488,7 @@
 				<label>$INFO[PVR.ActStreamClient]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font12</font>
+				<font>font10</font>
 				<textcolor>white</textcolor>
 			</control>
 			<control type="label">
