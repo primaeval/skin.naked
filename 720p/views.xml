@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="views">
+
+    <controls>
+        <control type="list" id="50">
+            <visible>true</visible>
+            <description>Simple Wide List</description>
+            <left>0</left>
+            <top>0</top>
+            <width>1150</width>
+            <height>720</height>
+            <visible>true</visible>
+            <viewtype label="list">list</viewtype>
+            <orientation>vertical</orientation>
+            <pagecontrol>-</pagecontrol>
+            <autoscroll>false</autoscroll>
+            <scrolltime>0</scrolltime>
+            <itemlayout width="1150" height="72">
+                <control type="image">
+                    <left>1</left>
+                    <top>1</top>
+                    <width>128</width>
+                    <height>64</height>
+                    <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+                    <info>ListItem.Icon</info>
+                </control>
+                <control type="label">
+                    <left>134</left>
+                    <top>0</top>
+                    
+                    <height>60</height>
+                    <font>font16</font>
+                    <aligny>center</aligny>
+                    <textcolor>grey2</textcolor>
+                    <selectedcolor>selected</selectedcolor>
+                    <align>left</align>
+                    <info>ListItem.Label</info>
+                </control>
+            </itemlayout>
+            <focusedlayout width="1150" height="72">
+                <control type="image">
+                    <left>1</left>
+                    <top>1</top>
+                    <width>128</width>
+                    <height>64</height>
+                    <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+                    <info>ListItem.Icon</info>
+                </control>
+                <control type="label">
+                    <left>134</left>
+                    <top>0</top>
+                    
+                    <height>60</height>
+                    <font>font16</font>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                    <selectedcolor>selected</selectedcolor>
+                    <align>left</align>
+                    <info>ListItem.Label</info>
+                </control>
+            </focusedlayout>
+        </control>
+        
+        
+
+		<control type="group">
+			<visible>Control.IsVisible(500)</visible>
+			<include>VisibleFadeEffect</include>
+			<control type="panel" id="500">
+				<left>0</left>
+				<top>0</top>
+				<width>1280</width>
+				<height>720</height>
+
+				<viewtype label="thumbnail">list</viewtype>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<preloaditems>2</preloaditems>
+				<itemlayout condition="!Container.Content(Movies) + !Container.Content(Seasons) + !Container.Content(TVShows) + !Container.Content(Sets)" height="180" width="213">
+					<control type="image">
+						<left>1</left>
+						<top>0</top>
+						<width>214</width>
+						<height>160</height>
+						<bordertexture border="5">button-nofocus.png</bordertexture>
+						<bordersize>5</bordersize>
+						<texture background="true">$INFO[Listitem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+						<visible>!Container.Content(Episodes)</visible>
+					</control>
+					<control type="image">
+						<left>1</left>
+						<top>0</top>
+						<width>214</width>
+						<height>160</height>
+						<aspectratio>scale</aspectratio>
+						<bordertexture border="5">button-nofocus.png</bordertexture>
+						<bordersize>5</bordersize>
+						<texture background="true">$INFO[Listitem.Icon]</texture>
+						<visible>Container.Content(Episodes)</visible>
+					</control>
+					<control type="label">
+						<left>8</left>
+						<top>22r</top>
+						<width>200</width>
+						<height>25</height>
+						<font>font10</font>
+						<textcolor>grey2</textcolor>
+						<selectedcolor>selected</selectedcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<info>ListItem.Label</info>
+					</control>
+					<control type="image">
+						<left>170</left>
+						<top>130</top>
+						<width>30</width>
+						<height>30</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Overlay]</texture>
+					</control>
+				</itemlayout>
+				<focusedlayout condition="!Container.Content(Movies) + !Container.Content(Seasons) + !Container.Content(TVShows) + !Container.Content(Sets)" height="180" width="213">
+					<control type="image">
+						<left>1</left>
+						<top>0</top>
+						<width>214</width>
+						<height>160</height>
+						<bordertexture border="5">folder-focus.png</bordertexture>
+						<bordersize>5</bordersize>
+						<texture background="true">$INFO[Listitem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+						<visible>!Container.Content(Episodes)</visible>
+					</control>
+					<control type="image">
+						<left>1</left>
+						<top>0</top>
+						<width>214</width>
+						<height>160</height>
+						<aspectratio>scale</aspectratio>
+						<bordertexture border="5">folder-focus.png</bordertexture>
+						<bordersize>5</bordersize>
+						<texture background="true">$INFO[Listitem.Icon]</texture>
+						<visible>Container.Content(Episodes)</visible>
+					</control>
+					<control type="label">
+						<left>8</left>
+						<top>22r</top>
+						<width>200</width>
+						<height>25</height>
+						<font>font10</font>
+						<textcolor>white</textcolor>
+						<selectedcolor>selected</selectedcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<info>ListItem.Label</info>
+					</control>
+					<control type="image">
+						<left>170</left>
+						<top>130</top>
+						<width>30</width>
+						<height>30</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Overlay]</texture>
+					</control>
+				</focusedlayout>
+				<itemlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="240" width="213">
+					<control type="image">
+						<left>1</left>
+						<top>0</top>
+						<width>214</width>
+						<height>240</height>
+						<bordertexture border="5">button-nofocus.png</bordertexture>
+						<bordersize>5</bordersize>
+						<texture background="true">$VAR[PosterThumb]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="label">
+						<left>0</left>
+						<top>32r</top>
+						<width>200</width>
+						<height>25</height>
+						<font>font12</font>
+						<textcolor>black</textcolor>
+						<selectedcolor>selected</selectedcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<info>ListItem.Label</info>
+                        <visible>false</visible>
+					</control>
+					<control type="image">
+						<left>170</left>
+						<top>210</top>
+						<width>30</width>
+						<height>30</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Overlay]</texture>
+					</control>
+				</itemlayout>
+				<focusedlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="240" width="213">
+					<control type="image">
+						<left>1</left>
+						<top>0</top>
+						<width>214</width>
+						<height>240</height>
+						<bordertexture border="5">folder-focus.png</bordertexture>
+						<bordersize>5</bordersize>
+						<texture background="true">$VAR[PosterThumb]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="label">
+						<left>0</left>
+						<top>0</top>
+						<width>200</width>
+						<height>25</height>
+						<font>font12</font>
+						<textcolor>white</textcolor>
+                        <shadowcolor>ff000000</shadowcolor>
+						<selectedcolor>selected</selectedcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<info>ListItem.Label</info>
+                        <wrapmultiline>true</wrapmultiline>
+                        <scroll>true</scroll>
+					</control>
+					<control type="image">
+						<left>170</left>
+						<top>210</top>
+						<width>30</width>
+						<height>30</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Overlay]</texture>
+					</control>
+				</focusedlayout>
+			</control>
+
+		</control>
+
+        
+        
+        
+        <control type="grouplist" id="51">
+            <description>Player Controls</description>
+            <left>80r</left>
+            <top>0</top>
+            <width>80</width>
+            <height>720</height>
+            <itemgap>0</itemgap>
+            <pagecontrol>-</pagecontrol>
+            <scrolltime >0</scrolltime>
+            <orientation>vertical</orientation>
+            <usecontrolcoords>false</usecontrolcoords>
+            <visible>true</visible>
+            <align>left</align>
+            <control type="button" id="601">
+                <width>80</width>
+                <height>80</height>
+                <texturefocus>OSDPrevTrackFO.png</texturefocus>
+                <texturenofocus>OSDPrevTrackNF.png</texturenofocus>
+                <onclick>PlayerControl(Previous)</onclick>
+            </control>
+            <control type="button" id="602">
+                <width>80</width>
+                <height>80</height>
+                <texturefocus>OSDRewindFO.png</texturefocus>
+                <texturenofocus>OSDRewindNF.png</texturenofocus>
+                <onclick>PlayerControl(Rewind)</onclick>
+            </control>
+            <control type="togglebutton" id="603">
+                <width>80</width>
+                <height>80</height>
+                <texturefocus>OSDPauseFO.png</texturefocus>
+                <texturenofocus>OSDPauseNF.png</texturenofocus>
+                <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
+                <alttexturefocus>OSDPlayFO.png</alttexturefocus>
+                <alttexturenofocus>OSDPlayNF.png</alttexturenofocus>
+                <onclick>PlayerControl(Play)</onclick>
+            </control>
+            <control type="button" id="604">
+                <width>80</width>
+                <height>80</height>
+                <texturefocus>OSDStopFO.png</texturefocus>
+                <texturenofocus>OSDStopNF.png</texturenofocus>
+                <onclick>PlayerControl(Stop)</onclick>
+            </control>
+            <control type="button" id="605">
+                <width>80</width>
+                <height>80</height>
+                <texturefocus>OSDForwardFO.png</texturefocus>
+                <texturenofocus>OSDForwardNF.png</texturenofocus>
+                <onclick>PlayerControl(Forward)</onclick>
+            </control>
+            <control type="button" id="606">
+                <width>80</width>
+                <height>80</height>
+                <texturefocus>OSDNextTrackFO.png</texturefocus>
+                <texturenofocus>OSDNextTrackNF.png</texturenofocus>
+                <onclick>PlayerControl(Next)</onclick>
+            </control>
+            
+            <control type="button" id="607">
+                <width>80</width>
+                <height>80</height>
+                <texturefocus>lists.png</texturefocus>
+                <texturenofocus>lists.png</texturenofocus>
+                <onclick>Container.NextViewMode</onclick>
+            </control> 
+            
+            <control type="button" id="607">
+                <width>80</width>
+                <height>80</height>
+                <texturefocus>GoFullscreen.png</texturefocus>
+                <texturenofocus>GoFullscreen.png</texturenofocus>
+                <onclick>fullscreen</onclick>
+                <visible>Player.HasMedia</visible>
+            </control>
+            
+           
+            
+        </control>
+    </controls>
+
+	</include>
+</includes>
