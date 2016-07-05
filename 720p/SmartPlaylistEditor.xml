@@ -37,7 +37,7 @@
 			<control type="label">
 				<description>Name Label</description>
 				<left>30</left>
-				<top>120</top>
+				<top>110</top>
 				<width>740</width>
 				<label>21433</label>
 				<font>font12</font>
@@ -64,7 +64,7 @@
 			<control type="label">
 				<description>rules label</description>
 				<left>30</left>
-				<top>200</top>
+				<top>190</top>
 				<width>740</width>
 				<align>left</align>
 				<label>21434</label>
@@ -182,7 +182,7 @@
 			<control type="label">
 				<description>Name Label</description>
 				<left>30</left>
-				<top>370</top>
+				<top>360</top>
 				<width>740</width>
 				<label>31325</label>
 				<font>font12</font>
@@ -286,7 +286,7 @@
 					<left>195</left>
 					<top>605</top>
 					<width>200</width>
-					<height>40</height>
+					<height>60</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>186</label>
@@ -301,7 +301,7 @@
 					<left>405</left>
 					<top>605</top>
 					<width>200</width>
-					<height>40</height>
+					<height>60</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>222</label>
