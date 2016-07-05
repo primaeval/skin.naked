@@ -11,10 +11,10 @@
 	<controls>
 		<control type="button" id="1000">
 			<description>Close Window button</description>
-			<left>64r</left>
-			<top>64r</top>
-			<width>64</width>
-			<height>64</height>
+			<left>96r</left>
+			<top>192r</top>
+			<width>96</width>
+			<height>96</height>
 			<label>-</label>
 			<font>-</font>
 			<onclick>Dialog.Close(MusicOSD,true)</onclick>
@@ -33,7 +33,7 @@
 			<depth>DepthOSD+</depth>
 			<description>Seek Slider</description>
 			<left>430</left>
-			<top>130r</top>
+			<top>110r</top>
 			<width>720</width>
 			<height>16</height>
 			<onup>702</onup>
@@ -345,11 +345,11 @@
 		</control>
         <control type="grouplist" id="51">
             <description>Player Controls</description>
-            <left>128r</left>
+            <left>96r</left>
             <top>0</top>
             <width>128</width>
             <height>720</height>
-            <itemgap>0</itemgap>
+            <itemgap>-10</itemgap>
             <pagecontrol>-</pagecontrol>
             <scrolltime >0</scrolltime>
             <orientation>vertical</orientation>

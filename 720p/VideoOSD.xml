@@ -500,7 +500,7 @@
 		</control>
         <control type="grouplist" id="51">
             <description>Player Controls</description>
-            <left>128r</left>
+            <left>96r</left>
             <top>0</top>
             <width>128</width>
             <height>720</height>
