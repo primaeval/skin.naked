@@ -2,8 +2,7 @@
 <window>
     <defaultcontrol always="true">9000</defaultcontrol>
     <controls>
-
-        <control type="list" id="50">
+        <control type="panel" id="50">
             <description>My first list container</description>
             <left>0</left>
             <top>0</top>
@@ -11,54 +10,57 @@
             <height>720</height>
             <visible>true</visible>
             <viewtype label="list">list</viewtype>
-            <orientation>vertical</orientation>
+            <orientation>horizontal</orientation>
             <pagecontrol>-</pagecontrol>
             <autoscroll>false</autoscroll>
             <scrolltime>0</scrolltime>
-            <itemlayout width="1280" height="72">
+            <itemlayout width="640" height="80">
                 <control type="image">
                     <left>1</left>
-                    <top>1</top>
-                    <width>64</width>
-                    <height>64</height>
+                    <top>10</top>
+                    <width>80</width>
+                    <height>80</height>
+                    <aligny>center</aligny>
                     <info>ListItem.Icon</info>
+                    <colordiffuse>grey</colordiffuse>
                 </control>
                 <control type="label">
-                    <left>66</left>
+                    <left>128</left>
                     <top>0</top>
-                    <width>1000</width>
-                    <height>60</height>
+                    <width>640</width>
+                    <height>80</height>
                     <font>font_MainMenu</font>
                     <aligny>center</aligny>
                     <textcolor>grey2</textcolor>
+
                     <selectedcolor>selected</selectedcolor>
                     <align>left</align>
                     <info>ListItem.Label</info>
                 </control>
-
             </itemlayout>
-            <focusedlayout width="1280" height="72">
+            <focusedlayout width="640" height="80">
                 <control type="image">
                     <left>1</left>
-                    <top>1</top>
-                    <width>64</width>
-                    <height>64</height>
+                    <top>10</top>
+                    <width>80</width>
+                    <height>80</height>
+                    <aligny>center</aligny>
                     <info>ListItem.Icon</info>
                 </control>
                 <control type="label">
-                    <left>66</left>
+                    <left>128</left>
                     <top>0</top>
-                    <width>1000</width>
-                    <height>60</height>
+                    <width>640</width>
+                    <height>80</height>
                     <font>font_MainMenu</font>
                     <aligny>center</aligny>
                     <textcolor>white</textcolor>
+
                     <selectedcolor>selected</selectedcolor>
                     <align>left</align>
                     <info>ListItem.Label</info>
                 </control>
-
-            </focusedlayout>      
+            </focusedlayout> 
             <content>
                 <item id="1">
                     <label>480</label>
@@ -135,7 +137,7 @@
                     <icon>windows/home/icons/music.png</icon>
                 </item>   
                 <item id="12">
-                    <label>Update Addon Repositories</label>
+                    <label>Update Addon Repos</label>
                     <onclick>UpdateAddonRepos</onclick>
                     <icon>windows/home/icons/addons.png</icon>
                 </item>    
