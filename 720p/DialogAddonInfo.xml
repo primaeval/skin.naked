@@ -284,7 +284,7 @@
 				<control type="button" id="9">
 					<description>Configure Addon</description>
 					<width>220</width>
-					<height>43</height>
+					<height>64</height>
 					<label>24020</label>
 					<align>center</align>
 					<font>font12_title</font>
@@ -292,7 +292,7 @@
 				<control type="button" id="8">
 					<description>Update Addon button</description>
 					<width>220</width>
-					<height>43</height>
+					<height>64</height>
 					<label>24069</label>
 					<align>center</align>
 					<font>font12_title</font>
@@ -300,7 +300,7 @@
 				<control type="radiobutton" id="13">
 					<description>Auto-update button</description>
 					<width>220</width>
-					<height>43</height>
+					<height>64</height>
 					<label>21340</label>
 					<align>center</align>
 					<font>font12_title</font>
@@ -308,7 +308,7 @@
 				<control type="button" id="12">
 					<description>Launch Addon button</description>
 					<width>220</width>
-					<height>43</height>
+					<height>64</height>
 					<label>518</label>
 					<align>center</align>
 					<font>font12_title</font>
@@ -316,7 +316,7 @@
 				<control type="button" id="6">
 					<description>Install/UnInstall Addon button</description>
 					<width>220</width>
-					<height>43</height>
+					<height>64</height>
 					<label>24022</label>
 					<align>center</align>
 					<font>font12_title</font>
@@ -324,7 +324,7 @@
 				<control type="button" id="7">
 					<description>Enable/Disable Addon button</description>
 					<width>220</width>
-					<height>43</height>
+					<height>64</height>
 					<label>24021</label>
 					<align>center</align>
 					<font>font12_title</font>
@@ -332,7 +332,7 @@
 				<control type="button" id="10">
 					<description>Changelog button</description>
 					<width>220</width>
-					<height>43</height>
+					<height>64</height>
 					<label>24036</label>
 					<align>center</align>
 					<font>font12_title</font>
