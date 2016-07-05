@@ -253,6 +253,15 @@
             <usecontrolcoords>false</usecontrolcoords>
             <visible>true</visible>
             <align>left</align>
+            
+            <control type="button" id="607">
+                <width>80</width>
+                <height>80</height>
+                <texturefocus>lists.png</texturefocus>
+                <texturenofocus>lists.png</texturenofocus>
+                <onclick>Container.NextViewMode</onclick>
+            </control>             
+            
             <control type="button" id="601">
                 <width>80</width>
                 <height>80</height>
@@ -299,13 +308,7 @@
                 <onclick>PlayerControl(Next)</onclick>
             </control>
             
-            <control type="button" id="607">
-                <width>80</width>
-                <height>80</height>
-                <texturefocus>lists.png</texturefocus>
-                <texturenofocus>lists.png</texturenofocus>
-                <onclick>Container.NextViewMode</onclick>
-            </control> 
+
             
             <control type="button" id="607">
                 <width>80</width>
