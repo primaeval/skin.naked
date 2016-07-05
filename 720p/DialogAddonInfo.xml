@@ -2,9 +2,9 @@
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<coordinates>
-		<left>185</left>
-		<top>40</top>
-		<origin x="185" y="10">!IsEmpty(ListItem.Property(Addon.broken))</origin>
+		<left>0</left>
+		<top>0</top>
+		<origin x="0" y="0">!IsEmpty(ListItem.Property(Addon.broken))</origin>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
@@ -12,17 +12,17 @@
 			<include>VisibleFadeEffect</include>
 			<visible>!Window.isVisible(AddonSettings) + !Window.IsActive(TextViewer)</visible>
 			<include name="DialogBackgroundCommons">
-				<param name="DialogBackgroundWidth" value="920" />
-				<param name="DialogBackgroundHeight" value="639" />
-				<param name="DialogHeaderWidth" value="840" />
+				<param name="DialogBackgroundWidth" value="1280" />
+				<param name="DialogBackgroundHeight" value="720" />
+				<param name="DialogHeaderWidth" value="1280" />
 				<param name="DialogHeaderLabel" value="$LOCALIZE[24003]" />
 				<param name="DialogHeaderId" value="2" />
-				<param name="CloseButtonLeft" value="830" />
+				<param name="CloseButtonLeft" value="80r" />
 				<param name="CloseButtonNav" value="3" />
 			</include>
 			<control type="image">
-				<left>30</left>
-				<top>70</top>
+				<left>0</left>
+				<top>0</top>
 				<width>220</width>
 				<height>220</height>
 				<aspectratio>keep</aspectratio>
@@ -62,7 +62,7 @@
 					<description>Type Value</description>
 					<left>160</left>
 					<top>0</top>
-					<width>440</width>
+					<width>1000</width>
 					<height>25</height>
 					<label fallback="416">$INFO[ListItem.Property(Addon.Type)]</label>
 					<align>left</align>
@@ -86,7 +86,7 @@
 					<description>Author Value</description>
 					<left>160</left>
 					<top>30</top>
-					<width>440</width>
+					<width>1000</width>
 					<height>25</height>
 					<label fallback="416">$INFO[ListItem.Property(Addon.Creator)]</label>
 					<align>left</align>
@@ -110,7 +110,7 @@
 					<description>Version Value</description>
 					<left>160</left>
 					<top>60</top>
-					<width>440</width>
+					<width>1000</width>
 					<height>25</height>
 					<label fallback="416">$INFO[ListItem.Property(Addon.Version)]</label>
 					<align>left</align>
@@ -134,7 +134,7 @@
 					<description>Summary Value</description>
 					<left>160</left>
 					<top>90</top>
-					<width>440</width>
+					<width>1000</width>
 					<height>25</height>
 					<label fallback="416">$INFO[ListItem.Property(Addon.Summary)]</label>
 					<align>left</align>
@@ -180,7 +180,7 @@
 						<description>Description</description>
 						<left>10</left>
 						<top>197</top>
-						<width>600</width>
+						<width>1000</width>
 						<height>188</height>
 						<font>font13</font>
 						<align>justify</align>
@@ -246,7 +246,7 @@
 						<description>Description</description>
 						<left>10</left>
 						<top>207</top>
-						<width>600</width>
+						<width>1000</width>
 						<height>258</height>
 						<font>font13</font>
 						<align>left</align>
@@ -272,10 +272,10 @@
 				</control>
 			</control>
 			<control type="grouplist" id="9000">
-				<left>30</left>
-				<top>300</top>
+				<left>0</left>
+				<top>220</top>
 				<width>220</width>
-				<height>313</height>
+				<height>500</height>
 				<onleft>60</onleft>
 				<onright>60</onright>
 				<onup>9000</onup>
