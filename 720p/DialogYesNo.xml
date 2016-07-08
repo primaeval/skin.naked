@@ -10,7 +10,7 @@
 	<controls>
 		<include name="DialogBackgroundCommons">
 			<param name="DialogBackgroundWidth" value="610" />
-			<param name="DialogBackgroundHeight" value="240" />
+			<param name="DialogBackgroundHeight" value="280" />
 			<param name="DialogHeaderWidth" value="530" />
 			<param name="DialogHeaderLabel" value="$LOCALIZE[13406]" />
 			<param name="DialogHeaderId" value="1" />
@@ -33,7 +33,7 @@
 			<left>95</left>
 			<top>175</top>
 			<width>200</width>
-			<height>40</height>
+			<height>80</height>
 			<label>107</label>
 			<font>font12_title</font>
 			<textcolor>white</textcolor>
@@ -49,7 +49,7 @@
 			<left>305</left>
 			<top>175</top>
 			<width>200</width>
-			<height>40</height>
+			<height>80</height>
 			<label>106</label>
 			<font>font12_title</font>
 			<textcolor>white</textcolor>
